@@ -1,3 +1,5 @@
+package puntob;
+
 public class Rectangle {
 	private float recWidth = 0;
 	private float recLong = 0;
@@ -5,20 +7,38 @@ public class Rectangle {
 		recWidth = 1;
 		recLong = 1;
 	}
-	public void setWidth(float valueW){
-		if(valueW>=1 || valueW<=20){recWidth = valueW;}
-		else{System.out.println("value out of range");}
-	}
-	public float getWidth(){
+
+	public float getRecWidth() {
 		return recWidth;
 	}
-	public void setLong(float valueL){
-		if(valueL>=1 || valueL<=20){recLong = valueL;}
+
+
+	public Rectangle(float recWidth, float recLong) {
+
+		setRecWidth(recWidth);
+		setRecLong(recLong);
+
+	}
+
+	public void setRecWidth(float recWidth) {
+
+		if(recWidth>=1 || recWidth<=20){this.recWidth = recWidth;}
 		else{System.out.println("value out of range");}
 	}
-	public float getLong(){
+
+	public float getRecLong() {
 		return recLong;
 	}
+
+
+	public void setRecLong(float recLong) {
+
+		if(recLong>=1 || recLong<=20){this.recLong = recLong;}
+		else
+			System.out.println("value out of range");
+
+	}
+
 	public float getPerimeter(){
 		return(2*(recWidth+recLong));
 	}
