@@ -22,7 +22,7 @@ public class Rectangle {
 
 	public void setRecWidth(float recWidth) {
 
-		if(recWidth>=1 || recWidth<=20){this.recWidth = recWidth;}
+		if(recWidth>=1 && recWidth<=20){this.recWidth = recWidth;}
 		else{System.out.println("value out of range");}
 	}
 
@@ -33,7 +33,7 @@ public class Rectangle {
 
 	public void setRecLong(float recLong) {
 
-		if(recLong>=1 || recLong<=20){this.recLong = recLong;}
+		if(recLong>=1 && recLong<=20){this.recLong = recLong;}
 		else
 			System.out.println("value out of range");
 
