@@ -1,8 +1,8 @@
 package puntob;
 
 public class Rectangle {
-	private float recWidth = 0;
-	private float recLong = 0;
+	private float recWidth = 1;
+	private float recLong = 1;
 	public Rectangle(){
 		recWidth = 1;
 		recLong = 1;
