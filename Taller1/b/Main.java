@@ -1,20 +1,24 @@
-import src.Rectangle;
-public class Main {
-	public void main(){
+package puntob;
+
+import puntob.Rectangle;
+
+public class Mainb {
+	public static void main(String[] args){
 		Rectangle first=new Rectangle();
-		Rectangle second=new Rectangle();
-		Rectangle third=new Rectangle();
-		Rectangle fourth=new Rectangle();
-		Rectangle fifith=new Rectangle();
-		first.setWidth(1);
-		first.SetLong(1);
-		second.setWidth(2);
-		second.SetLong(2);
-		third.setWidth(3);
-		third.SetLong(4);
-		fourth.setWidth(5);
-		fourth.SetLong(5);
-		fifith.setWidth(6);
-		fifith.SetLong(6);
+		Rectangle second=new Rectangle(2,2);
+		Rectangle third=new Rectangle(3,3);
+		Rectangle fourth=new Rectangle(4,4);
+		Rectangle fifth=new Rectangle(5,5);
+		
+		System.out.println(first.getArea());
+		System.out.println(first.getPerimeter());
+		System.out.println(second.getArea());
+		System.out.println(second.getPerimeter());
+		System.out.println(third.getArea());
+		System.out.println(third.getPerimeter());
+		System.out.println(fourth.getArea());
+		System.out.println(fourth.getPerimeter());
+		System.out.println(fifth.getArea());
+		System.out.println(fifth.getPerimeter());
 	}
 }
