@@ -16,12 +16,14 @@ public class Rectangulo extends Figuras{
         ancho=an;
 	}
 	//Método para el cáculo del área
+	@Override 
 	public double area(){
 		double AreaR=(alto)*(ancho);
 		if (alto<0||ancho<0)AreaR=-1;
 		return AreaR;
 	}
 	//Método para el cáculo del perímetro
+	@Override 
 	public double perimetro(){
 		double perimetro=((2*(alto))+(2*(ancho)));
 		if (alto<0||ancho<0)perimetro=-1;
@@ -29,6 +31,7 @@ public class Rectangulo extends Figuras{
 		
 	}
 	//Método para establecer el nombre de la figura
+	@Override 
 	public String nombre(){		
 		return "rectángulo";		
 	}

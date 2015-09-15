@@ -18,6 +18,7 @@ public class Triangulo extends Figuras{
         lado3=l3;
 	}
 	//Método para el cálculo del área
+	@Override 
 	public double area(){			
 		double s=((lado1+lado2+lado3)/2);
 		double AreaR = Math.sqrt(s*(s-lado1)*(s-lado2)*(s-lado3));
@@ -26,11 +27,13 @@ public class Triangulo extends Figuras{
 		return AreaR;
 	}
 	//Método para el cáculo del perímetro
+	@Override 
 	public double perimetro(){
 		double perimetro=(lado1+lado2+lado3);
 		return perimetro;
 	}
 	//Método para establecer el nombre de la figura
+	@Override 
 	public String nombre(){		
 		return "triángulo";		
 	}
